@@ -1,0 +1,7 @@
+CREATE DATABASE IF NOT EXISTS join_us;
+USE join_us;
+
+CREATE TABLE IF NOT EXISTS users (
+	email VARCHAR(200) PRIMARY KEY,
+    created_at TIMESTAMP DEFAULT NOW()
+);
